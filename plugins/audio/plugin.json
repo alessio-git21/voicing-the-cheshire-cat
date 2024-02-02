@@ -1,0 +1,6 @@
+{
+    "name": "Audio",
+    "version": "1.0",
+    "author_name": "alessio",
+    "description": "This plugin allows the cat to talk. It uses the alessio21/text-to-speech docker image."
+}

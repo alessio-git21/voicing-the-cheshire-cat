@@ -1,0 +1,42 @@
+version: '3'
+
+networks:
+  audio_for_cheshirecat:
+    driver: bridge
+
+services:
+
+  cheshire-cat-core:
+    image: ghcr.io/cheshire-cat-ai/core:latest
+    container_name: cheshire_cat_core
+    ports:
+      - ${CORE_PORT:-1865}:80
+    environment:
+      - PYTHONUNBUFFERED=1
+      - WATCHFILES_FORCE_POLLING=true
+    networks:
+      - audio_for_cheshirecat
+    volumes:
+      - ./static:/app/cat/static
+      - ./plugins:/app/cat/plugins
+      - ./data:/app/cat/data
+
+
+  container_audio:
+    image: play-python-array
+    ports:
+     - "2865:2865"
+    networks:
+      - audio_for_cheshirecat
+
+  container_tts:
+    image: text-to-speech
+    ports:
+     - "1000:1000"
+    volumes:
+     - ./tts_models:/app/models
+     - ./speaker_embedding:/app/speaker_embedding
+    environment:
+      - SPEAKER=slt
+    networks:
+      - audio_for_cheshirecat

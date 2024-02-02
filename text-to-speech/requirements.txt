@@ -1,0 +1,9 @@
+transformers
+#datasets
+speechbrain
+numpy
+huggingface-hub
+requests
+#websockets
+flask
+

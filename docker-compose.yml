@@ -23,14 +23,14 @@ services:
 
 
   container_audio:
-    image: play-python-array
+    image: alessio21/play-python-array
     ports:
      - "2865:2865"
     networks:
       - audio_for_cheshirecat
 
   container_tts:
-    image: text-to-speech
+    image: alessio21/text-to-speech
     ports:
      - "1000:1000"
     volumes:
@@ -38,5 +38,6 @@ services:
      - ./speaker_embedding:/app/speaker_embedding
     environment:
       - SPEAKER=slt
+      - API_URL=http://container_audio:2865/send_array
     networks:
       - audio_for_cheshirecat

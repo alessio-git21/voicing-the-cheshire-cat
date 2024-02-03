@@ -1,1 +1,3 @@
-/tts_models
+/tts_models/models--microsoft--speecht5_tts
+/tts_models/models--microsoft--speecht5_hifigan
+.gitignore

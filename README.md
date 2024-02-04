@@ -1,6 +1,6 @@
 # Voicing the Cheshire Cat
 
-Voicing-the-Cheshire-Cat is a project that brings a voice to the famous [cat AI assistant](https://github.com/cheshire-cat-ai/core), allowing users to interact with a chatbot and hear its responses. This project is powered by three Docker containers, including two custom images created for audio generation and text-to-speech conversion.
+Voicing-the-Cheshire-Cat is a project that gives voice to the famous [cat AI assistant](https://github.com/cheshire-cat-ai/core), allowing users to interact with a chatbot and hear its responses. This project is powered by three Docker containers, including two custom images created for audio generation and text-to-speech conversion.
 
 The text-to-speech container runs the SpeechT5 models inside.
 

@@ -1,6 +1,8 @@
-# Voicing the Cheshire Cat AI with SpeechT5
+# Voicing the Cheshire Cat
 
-Voicing-the-Cat is a project that brings a voice to the famous [cat AI assistant](https://github.com/cheshire-cat-ai/core), allowing users to interact with a chatbot and hear its responses. This project is powered by three Docker containers, including two custom images created for audio generation and text-to-speech conversion.
+Voicing-the-Cheshire-Cat is a project that brings a voice to the famous [cat AI assistant](https://github.com/cheshire-cat-ai/core), allowing users to interact with a chatbot and hear its responses. This project is powered by three Docker containers, including two custom images created for audio generation and text-to-speech conversion.
+
+The text-to-speech container runs the SpeechT5 models inside.
 
 ## Requirements
 
@@ -25,13 +27,13 @@ Voicing-the-Cat is a project that brings a voice to the famous [cat AI assistant
 
     docker-compose up
 
-* Once all the service have been launched go to http://localhost:1865/admin and configure your favourite language model
-* Enable the **audio pluging** in the plugins tabs
+* Once all the service have been launched go to http://localhost:1865/admin and configure your favourite language model.
+* Enable the **audio pluging** in the plugins tabs.
 * Chat with the cat and listen to its answer!
 
 ## How it works:
 
-* user send message to the cat container.
+* User send message to the cat container.
 * The cat's responses are forwarded to the text-to-speech container.
 * The text-to-speech container converts the response into an audio array.
 * The audio array is sent to the third container, allowing users to hear the chatbot's response.

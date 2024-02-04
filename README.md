@@ -45,7 +45,7 @@ The [text-to-speech image](https://hub.docker.com/r/alessio21/text-to-speech) ru
 
 ## How it works:
 
-1. Users send message to the cat container.
-2. The cat's responses are forwarded to the text-to-speech container.
+1. User sends the message to the Cat container.
+2. The Cat's responses are forwarded to the text-to-speech container.
 3. The text-to-speech container converts the response into an audio array.
 4. The audio array is sent to the third container, allowing users to hear the chatbot's response.

@@ -39,6 +39,8 @@ The [text-to-speech image](https://hub.docker.com/r/alessio21/text-to-speech) ru
 * Enable the **audio plugin** in the plugins tabs.
 * Chat with the Cat and listen to its answers!
 
+**Voice selection**: if you want to change the voice, in the compose file there is the SPEAKER environment variable which can be set with one of the names of the speaker embeddings available in the "speaker_embedding" folder.
+
 ## How it works:
 
 1. Users send message to the cat container.

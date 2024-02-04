@@ -6,7 +6,7 @@ The *modular design* of the project is due to the use of these custom docker ima
 
 The [audio generation image](https://hub.docker.com/r/alessio21/play-numpy-array) can generate audio from *any* numpy array that represents audio.
 
-The [text-to-speech image](https://hub.docker.com/r/alessio21/text-to-speech) runs the SpeechT5 models inside: it takes any text in input and generate a numpy array representing the corresponding audio. Different speakers can be used.
+The [text-to-speech image](https://hub.docker.com/r/alessio21/text-to-speech) runs the SpeechT5 models inside: it takes any text as input and generates a numpy array representing the corresponding audio. Different speakers can be used.
 
 ## Requirements
 

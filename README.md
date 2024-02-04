@@ -29,7 +29,7 @@ The text-to-speech container runs the SpeechT5 models inside.
 
 * Once all the service have been launched go to http://localhost:1865/admin and configure your favourite language model.
 * Enable the **audio pluging** in the plugins tabs.
-* Chat with the cat and listen to its answer!
+* Chat with the cat and listen to its answers!
 
 ## How it works:
 

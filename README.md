@@ -49,3 +49,7 @@ The [text-to-speech image](https://hub.docker.com/r/alessio21/text-to-speech) ru
 2. The Cat's responses are forwarded to the text-to-speech container.
 3. The text-to-speech container converts the response into an audio array.
 4. The audio array is sent to the third container, allowing users to hear the chatbot's response.
+
+## Limitations
+Audios for responses that are too long will be truncated to the maximum input length accepted by the SpeechT5 model.
+

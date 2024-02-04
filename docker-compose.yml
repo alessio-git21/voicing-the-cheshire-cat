@@ -23,7 +23,7 @@ services:
 
 
   container_audio:
-    image: alessio21/play-python-array
+    image: alessio21/play-numpy-array
     ports:
      - "2865:2865"
     networks:

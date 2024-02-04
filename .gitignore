@@ -1,4 +1,4 @@
-/tts_models/models--microsoft--speecht5_tts
-/tts_models/models--microsoft--speecht5_hifigan
+/tts_models/*
+!/tts_moels/info.txt
 /data
 .gitignore

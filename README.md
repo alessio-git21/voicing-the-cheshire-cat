@@ -8,11 +8,6 @@ The [audio generation image](https://hub.docker.com/r/alessio21/play-numpy-array
 
 The [text-to-speech image](https://hub.docker.com/r/alessio21/text-to-speech) runs the SpeechT5 models inside: it takes any text as input and generates a numpy array representing the corresponding audio. Different speakers can be used.
 
-## Requirements
-
-* Docker
-* Pulseaudio running on your pc. [Here](https://hub.docker.com/r/alessio21/play-numpy-array) you can find how to install Pulseaudio in order to ensure that the container that generates the audio works correctly.
-
 ## Features
 
 * **Cheshire Cat Integration**: Voicing-the-Cat leverages the Cheshire Cat project, a famous Italian cat AI assistant, allowing users to interact with the chatbot.
@@ -24,6 +19,11 @@ The [text-to-speech image](https://hub.docker.com/r/alessio21/text-to-speech) ru
 * **Multi-speaker**: Different speakers can be used to generate audio.
 
 * **Modular Design**: The multi-container application is designed with modularity in mind, making it adaptable for use in various chatbot scenarios beyond the Cheshire Cat project.
+
+## Requirements
+
+* Docker
+* Pulseaudio running on your pc. [Here](https://hub.docker.com/r/alessio21/play-numpy-array) you can find how to install Pulseaudio in order to ensure that the container that generates the audio works correctly.
 
 ## Quick start
 
@@ -39,7 +39,7 @@ The [text-to-speech image](https://hub.docker.com/r/alessio21/text-to-speech) ru
 
 ## How it works:
 
-1. User send message to the cat container.
+1. Users send message to the cat container.
 2. The cat's responses are forwarded to the text-to-speech container.
 3. The text-to-speech container converts the response into an audio array.
 4. The audio array is sent to the third container, allowing users to hear the chatbot's response.

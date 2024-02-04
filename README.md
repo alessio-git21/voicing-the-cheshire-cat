@@ -38,7 +38,7 @@ The [text-to-speech image](https://hub.docker.com/r/alessio21/text-to-speech) ru
       docker compose up
 
 * Once all services have been launched go to http://localhost:1865/admin and configure your favourite language model.
-* Enable the **audio plugin** in the plugins tabs.
+* Enable the **audio plugin** in the plugins dashboard.
 * Chat with the Cat and listen to its answers!
 
 **Voice selection**: if you want to change the voice, in the compose file there is the SPEAKER environment variable which can be set with one of the names of the speaker embeddings available in the "speaker_embedding" folder.

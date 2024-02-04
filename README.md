@@ -16,7 +16,7 @@ The [text-to-speech image](https://hub.docker.com/r/alessio21/text-to-speech) ru
 
 * **Text-to-Speech Conversion**: The project includes two custom containers for generating audio from any numpy array and converting text to speech. This enables the chatbot to communicate audibly.
 
-* **No audio files stored anywhere**: The audio is generated "on the fly" without the need to save any audio file.
+* **No audio files stored anywhere**: The audio is generated "on the fly" without saving any audio files.
 
 * **Multi-speaker**: Different speakers can be used to generate audio.
 

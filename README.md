@@ -31,6 +31,8 @@ The [text-to-speech image](https://hub.docker.com/r/alessio21/text-to-speech) ru
 
 * Clone the project
 
+* *Before* launching the container, remember to start Pulseaudio.
+
 * Open the command prompt, move to the project folder and run:
 
       docker compose up

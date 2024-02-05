@@ -12,7 +12,7 @@ The [text-to-speech image](https://hub.docker.com/r/alessio21/text-to-speech) ru
 
 ## Features
 
-* **Cheshire Cat Integration**: Voicing-the-Cat leverages the Cheshire Cat project, a famous Italian cat AI assistant, allowing users to interact with the chatbot.
+* **Cheshire Cat Integration**: Voicing-the-Cat leverages the Cheshire Cat project, a famous Italian AI assistant framework, allowing users to interact with the chatbot.
 
 * **Text-to-Speech Conversion**: The project includes two custom containers for generating audio from any numpy array and converting text to speech. This enables the chatbot to communicate audibly.
 

@@ -2,25 +2,19 @@
 
 <img src="https://github.com/alessio-git21/voicing-the-cheshire-cat/assets/100300894/d5af6a17-4b1d-4db6-b346-e216c1e22061" alt="Alt text" width="300px" height="300px">
 
-Voicing-the-Cheshire-Cat is a project that gives voice to the awesome [Cat AI assistant](https://github.com/cheshire-cat-ai/core), allowing users to interact with a chatbot and hear its responses. This project is powered by three Docker images, including two custom Docker images for audio generation and text-to-speech conversion (the other one is the Cat's image).
-
-The *modular design* of the project is due to the use of these custom docker images which can be used to power any other vocal AI assistant!
-
-The [audio generation image](https://hub.docker.com/r/alessio21/play-numpy-array) can generate audio from *any* numpy array that represents audio.
+Voicing-the-Cheshire-Cat is a multi-container application that leverages the [Cheshire Cat AI](https://github.com/cheshire-cat-ai/core) project in combination with two custom Docker images for text-to-speech conversion and audio generation. It gives voice to a chatbot by allowing users to listen to its responses.
 
 The [text-to-speech image](https://hub.docker.com/r/alessio21/text-to-speech) runs the SpeechT5 models inside: it takes any text as input and generates a numpy array representing the corresponding audio. Different speakers can be used.
 
+The [audio generation image](https://hub.docker.com/r/alessio21/play-numpy-array) can generate audio from *any* numpy array that represents audio.
+
 ## Features
 
-* **Cheshire Cat Integration**: Voicing-the-Cat leverages the Cheshire Cat project, a famous Italian AI assistant framework, allowing users to interact with the chatbot.
-
-* **Text-to-Speech Conversion**: The project includes two custom containers for generating audio from any numpy array and converting text to speech. This enables the chatbot to communicate audibly.
+* **Modular Design**: The multi-container application is designed with modularity in mind, making it adaptable for use in various chatbot scenarios beyond the Cheshire Cat project.
 
 * **No audio files stored anywhere**: The audio is generated "on the fly" without saving any audio files.
 
 * **Multi-speaker**: Different speakers can be used to generate audio.
-
-* **Modular Design**: The multi-container application is designed with modularity in mind, making it adaptable for use in various chatbot scenarios beyond the Cheshire Cat project.
 
 ## Requirements
 

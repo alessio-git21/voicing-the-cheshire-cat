@@ -19,7 +19,7 @@ The [audio generation image](https://hub.docker.com/r/alessio21/play-numpy-array
 ## Requirements
 
 * Docker
-* Pulseaudio running on your pc. [Here](https://hub.docker.com/r/alessio21/play-numpy-array) you can find how to install Pulseaudio in order to ensure that the container that generates the audio works correctly.
+* Pulseaudio running on your pc. [Here](https://hub.docker.com/r/alessio21/play-numpy-array) you can find how to install Pulseaudio in order to ensure that the container that generates the audio works properly.
 
 ## Quick start
 
